@@ -1,6 +1,6 @@
 def call(String project, String hubUser, String contname) {
 	try{
-		sh 'docker rm -f tomcattest'
+		sh 'docker rm -f ${contname}'
 	}catch(error){
 		//  do nothing if there is an exception
 	}
