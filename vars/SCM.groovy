@@ -1,5 +1,3 @@
-def call(String URL)
-node{
-   stage('SCM Checkout'){
+def call(String URL){
      git 'URL'
    }
