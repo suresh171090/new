@@ -1,3 +1,7 @@
 def call(String URL){
-     git 'URL'
+     node{
+   stage('SCM Checkout'){
+        git "${URL}"
    }
+   }
+}
